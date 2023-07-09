@@ -1,0 +1,281 @@
+<!-- The footer is a vital component of a website, providing a finishing touch to the overall design and user experience. To enhance our website, let's build a simple footer that includes a logo, navigation links, and a copyright statement, as shown in the below image. By implementing this footer, we aim to improve navigation, brand recognition, and establish legal ownership, ensuring a professional and complete website presence -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid #000;
+            padding: 1%;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 40px;
+            margin-bottom: 1%;
+        }
+        .logo img{
+            max-height: 40px;
+            width: 40px;
+        }
+        .detail{
+            padding: 3%;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            padding: 10%;
+        }
+        .topbtn{
+            text-align: end;
+        }
+        .nav-btn{
+            background-color: #1fc738;
+            border: none;
+            border-radius: 8px;
+            width: 40%;
+            height: 80%;
+        }
+
+
+        .hero{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2%;
+        }
+        .left-section{
+            padding: 20% 7%;
+        }
+        .para{
+            padding-top: 1%;
+            padding-bottom: 5%;
+        }
+        .btn{
+            background-color: #000;
+            color: #fff;
+            border: none;
+            width: 32%;
+            padding: 2%;
+        }
+        .right-section{
+            background-color: yellow;
+            height: 100vh;
+        }
+        img{
+            height: 100vh;
+            width: 75%;
+        }
+
+
+        .detail-box{
+            height: 60vh;
+            background-color: #361b1beb;
+            margin-top: 1%;
+            padding: 1% 3%;
+            gap: 10%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .order-box{
+            padding: 1%;
+            text-align: center;
+        }
+        .order-box img{
+            max-width: 30%;
+            max-height: 30%;
+        }
+        .order-box h2{
+            color: #fff;
+        }
+        .order-box p{
+            color: #c49992;
+        }
+
+
+        .card-section{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            gap: 5%;
+            padding-top: 2%;
+        }
+        .card{
+            border: 1px solid #000;
+            border-radius: 20px;
+        }
+        .img-section{        
+            width: 10 0%;
+            overflow: hidden;
+            margin-bottom: -10px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .card img{
+            width: 100%;
+            height: 200px;
+        }
+        .card h2{
+            padding-left: 10%;
+        }
+        .card p{
+            padding-left: 10%;
+        }
+
+
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: #361b1beb; 
+            padding: 5%;
+            margin-top: 6%;
+            gap: 2%;
+        }
+        .footer-image{
+            max-width: 80%;
+            max-height: 50vh;
+            padding: 5%;
+        }
+        .footer-image img{
+            text-align: center;
+            width: 100%;
+            max-height: 100%;
+        }
+        .navigation-link h2{
+            color: #fff;
+            text-align: left;
+        }
+        .navigation-link a{
+            text-align: left;
+            color: #c49992;
+            display: block;
+            margin-bottom: -35px;
+        }
+        .learn-more h2{
+            color: #fff;
+            text-align: left;
+        }
+        .learn-more a{
+            text-align: left;
+            color: #c49992;
+            display: block;
+            margin-bottom: -35px;
+        }
+        .end{
+            text-align: center;
+            color: #fff;
+            grid-column:1/4 ;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo1.png" alt="logo-pic">
+        </div>
+        
+        <div class="detail">
+            <a href="" class="home">Home</a>
+            <a href="" class="about">About</a>
+            <a href="" class="contact">Contact</a>
+        </div>
+        <div class="topbtn">
+            <button class="nav-btn">Login</button>
+        </div>
+    </div>
+
+
+    <div class="hero">
+        <div class="left-section">
+            <div class="head">
+                <h1>Healthy Food</h1>
+            </div>
+            <div class="para">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quis iure. Facilis omnis reprehenderit, temporibus ea eveniet sint laborum, architecto animi in quod provident? Tempora animi doloribus maiores nobis non excepturi officiis delectus sunt voluptate vel doloremque dignissimos labore consequuntur tenetur amet, omnis reiciendis optio ratione? Fugiat alias eum nisi numquam dolorum mollitia id iure sunt nam sed debitis illo accusantium praesentium nemo veniam odit obcaecati expedita ut, qui architecto deleniti omnis. Sapiente rerum cupiditate aut unde sit porro, tempora labore nemo neque repellat doloremque voluptatem cum modi iure. Id enim quisquam aliquid quae dicta quasi reiciendis esse fuga earum?
+                </p>
+            </div>
+            <div >
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="image/main-food.jpg" alt="big-pic" class="main-image">
+        </div>
+    </div>
+
+    <div class="detail-box">
+        <div class="order-box">
+            <img src="image/4x_-_No_min_order_x0bxuf.webp" alt="min order">
+            <h2>No Minimum Order</h2>
+            <p>
+                Order in for yourself or for the group, with no restrictions on order value
+            </p>
+        </div>
+        <div class="order-box">
+            <img src="image/4x_Live_order_zzotwy.webp" alt="live Tracking">
+            <h2>Live Order Tracking</h2>
+            <p>
+                Know where your order is at all times, from the restaurant to your doorstep
+            </p>
+        </div>
+        <div class="order-box">
+            <img src="image/4x_-_Super_fast_delivery_awv7sn.webp" alt="min order">
+            <h2>Lightning-Fast Delivery</h2>
+            <p>
+                Experience Swiggy's superfast delivery for food delivered fresh & on time
+            </p>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <div class="card">
+            <div class="img-section">
+                <img src="image/card-img1.png" alt="order-online">
+            </div>
+            <h2>Order Online</h2>
+            <p>Stay Home and order to your Door Step</p>
+        </div>
+        <div class="card">
+            <div class="img-section">
+                <img src="image/card-img2.png" alt="on-site-dining">
+            </div>
+            <h2>On-site Dining</h2>
+            <p>View the city's favourite dining venues.</p>
+        </div>
+        <div class="card">
+            <div class="img-section">
+                <img src="image/card-img3.png" alt="club">
+            </div>
+            <h2>Nightlife & Club</h2>
+            <p>Explore the city's top nightlife outlets & Book tables.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-image">
+            <img src="image/logo1.png" alt="footer-logo">
+        </div>
+        <div class="navigation-link">
+            <h2>Navigation Link</h2>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Login</a>
+        </div>
+        <div class="learn-more">
+            <h2>Learn More</h2>
+            <a href="">Privacy</a>
+            <a href="">Security</a>
+            <a href="">terms</a>
+            <a href="">Sitemap</a>
+        </div>
+        <div class="end">
+            <p>&#169; Copyright All rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>

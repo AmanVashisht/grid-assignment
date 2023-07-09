@@ -1,0 +1,108 @@
+<!-- The landing page designed in question 01 showcases an impressive layout and design. However, it lacks a crucial component - a navigation bar. Without a navigation bar, users may find navigating through different sections of the website challenging. To address this issue, design a navigation bar using CSS Grid, as shown in the image below as of now there is no need to update the navigation links. Navigation Bars enhance user experience, improve usability, and ensure easy access to various pages and content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid #000;
+            padding: 1%;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 40px;
+            margin-bottom: 1%;
+        }
+        .logo img{
+            max-height: 40px;
+            width: 40px;
+        }
+        .detail{
+            padding: 3%;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            padding: 10%;
+        }
+        .topbtn{
+            text-align: end;
+        }
+        .nav-btn{
+            background-color: #1fc738;
+            border: none;
+            border-radius: 8px;
+            width: 40%;
+            height: 80%;
+        }
+        .hero{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2%;
+        }
+        .left-section{
+            padding: 20% 7%;
+        }
+        .para{
+            padding-top: 1%;
+            padding-bottom: 5%;
+        }
+        .btn{
+            background-color: #000;
+            color: #fff;
+            border: none;
+            width: 32%;
+            padding: 2%;
+        }
+        .right-section{
+            background-color: yellow;
+            height: 100vh;
+        }
+        img{
+            height: 100vh;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/logo1.png" alt="logo-pic">
+        </div>
+        
+        <div class="detail">
+            <a href="" class="home">Home</a>
+            <a href="" class="about">About</a>
+            <a href="" class="contact">Contact</a>
+        </div>
+        <div class="topbtn">
+            <button class="nav-btn">Login</button>
+        </div>
+    </div>
+
+
+    <div class="hero">
+        <div class="left-section">
+            <div class="head">
+                <h1>Healthy Food</h1>
+            </div>
+            <div class="para">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quis iure. Facilis omnis reprehenderit, temporibus ea eveniet sint laborum, architecto animi in quod provident? Tempora animi doloribus maiores nobis non excepturi officiis delectus sunt voluptate vel doloremque dignissimos labore consequuntur tenetur amet, omnis reiciendis optio ratione? Fugiat alias eum nisi numquam dolorum mollitia id iure sunt nam sed debitis illo accusantium praesentium nemo veniam odit obcaecati expedita ut, qui architecto deleniti omnis. Sapiente rerum cupiditate aut unde sit porro, tempora labore nemo neque repellat doloremque voluptatem cum modi iure. Id enim quisquam aliquid quae dicta quasi reiciendis esse fuga earum?
+                </p>
+            </div>
+            <div >
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="image/main-food.jpg" alt="big-pic" class="main-image">
+        </div>
+    </div>
+</body>
+</html>

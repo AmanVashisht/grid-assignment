@@ -1,0 +1,62 @@
+<!-- Imagine you are working with a team for a restaurant client. You have been responsible for designing a landing page hero section for a restaurant specializing in serving healthy food. Your objective is to recreate the layout displayed in the given image using a CSS grid -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+            border: 2px solid #000;
+            padding: 1%;
+            gap: 2%;
+        }
+        .left-section{
+            padding: 20% 7%;
+        }
+        .para{
+            padding-top: 1%;
+            padding-bottom: 5%;
+        }
+        .btn{
+            background-color: #000;
+            color: #fff;
+            border: none;
+            width: 32%;
+            padding: 2%;
+        }
+        .right-section{
+            background-color: yellow;
+            height: 100vh;
+        }
+        img{
+            height: 100vh;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="left-section">
+            <div class="head">
+                <h1>Healthy Food</h1>
+            </div>
+            <div class="para">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quis iure. Facilis omnis reprehenderit, temporibus ea eveniet sint laborum, architecto animi in quod provident? Tempora animi doloribus maiores nobis non excepturi officiis delectus sunt voluptate vel doloremque dignissimos labore consequuntur tenetur amet, omnis reiciendis optio ratione? Fugiat alias eum nisi numquam dolorum mollitia id iure sunt nam sed debitis illo accusantium praesentium nemo veniam odit obcaecati expedita ut, qui architecto deleniti omnis. Sapiente rerum cupiditate aut unde sit porro, tempora labore nemo neque repellat doloremque voluptatem cum modi iure. Id enim quisquam aliquid quae dicta quasi reiciendis esse fuga earum?
+                </p>
+            </div>
+            <div >
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="image/main-food.jpg" alt="big-pic" class="main-image">
+        </div>
+    </div>
+</body>
+</html>
